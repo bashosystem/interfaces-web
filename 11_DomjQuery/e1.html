@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJERCICIO 1</title>
+  </head>
+  <body>
+    <p>Ejercicio 1</p>
+    <button class="item">Texto antiguo</button>
+    <p>Ejercicio 2</p>
+    <input class="producto" value="Primer" />
+    <input class="producto" value="Segundo" />
+    <input class="producto" value="Tercero" />
+    <p>Ejercicio 3</p>
+    <hr />
+    <div>Primer Div</div>
+    <div>Segundo Div</div>
+    <div>Tercer Div</div>
+    <hr />
+    <p>Ejercicio 5</p>
+    <p>Primer párrafo</p>
+    <p>Segundo párrafo</p>
+    <p>Terecer párrafo</p>
+    <p>Ejercicio 6</p>
+    <div id="divseleccionado">
+      <ul id="lista"></ul>
+    </div>
+    <p>Ejercicio 7</p>
+    <input id="descripcion" value="Texto a mostrar en consola" />
+    <hr />
+    <p>Ejercicio 8</p>
+    <input class="carta" value="1" /><br />
+    <input class="carta" value="2" /><br />
+    <input class="carta" value="3" /><br />
+    <input class="carta" value="4" /><br />
+    <hr>
+    <p>Ejercicio 9</p>
+    Aqui hya 4 tipos de input con la clase eliminar que deben desaparecer
+    <input class="eliminar" value="1"><br>
+    <input class="eliminar" value="2"><br>
+    <input class="eliminar" value="3"><br>
+    <input class="eliminar" value="4"><br>
+    <p>Ejercicio 10</p>
+    <div id="contenedor">
+        <span> Primer span</span>
+        <spna> Segundo span</spna>
+        <p>Esto es un p que no debe cambiar el fondo</p>
+    </div>
+    <hr>
+    <p>Ejercicio 11</p>
+    <input class="foto" value="foto 1">
+    <input class="foto" value="foto 2">
+    <input class="foto" value="foto 3">
+    <input class="foto" value="foto 4">
+    <hr>
+    <p>Ejercicio 12</p>
+    <div id="Ejercicio12">
+    <h1>Titulo 1</h1>
+    <h1>Titulo 2</h1>
+    <h1>Titulo 3</h1>
+    <h1>Titulo H2 no debe modificarse</h1>
+    </div>
+    <hr>
+    <p></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //Ejercicio 1
+        //1-Selecciona el elemento con la clase .item y que cambie el texto
+        $(".item").text("Nuevo texto");
+        //Ejercicio 2
+        //2-Selecciona el primer elemento con la clase .producto
+        //y cambia su color de fondo a azul.
+        $(".producto:first").css("background-color", "blue");
+        //Ejercicio 3
+        //3-Accede al primer <div> de la pagina y agrega el texto "hola mundo"
+        $("div.first").append("Hola Mundo");
+        // $('div.first').append("<p>Hola mundo</p>");
+        //Ejercicio 4
+        //4-Selecciona el elemento con id #titulo y cambia su color a rojo
+        $("#titulo").css("color", "rojo");
+        //Ejercicio 5
+        //Accede a todos los elementos <p> en la página y cambia su
+        //tamaño de fuente a 18px
+        $("p").css("font-size", "12px");
+        //Ejercicio 6
+        //6-Añade un nuevo elemento <li> al final de una lista con id #lista.
+        $("#lista").append("<li>Item nuevo</li>");
+        //otra manera de hacerlo
+        $("<li>Otro item</li>").appendTo("#lista");
+        //Ejercicio 7
+        //7-Accede al contenido del elemento con id #descripcion y muestra el valor en
+        //consola.
+        console.log($("#description").text());
+        //Ejercicio 8
+        //8-Obten todos los elementos con la clase .carta y cambia su color
+        //de borde a verde.
+        $(".carta").css("border-color", "green");
+        //Ejercicio 9
+        //9-Elimina todos los elementos con la clase .eliminar.
+        $(".eliminar").remove();
+        //Ejercicio 10
+        //10-Selecciona todos los <span> dentro de un <div> con
+        //id #contenedor y cambia su color de fondo a gris
+        $('#contenedor span first').css("background-color","gray");
+        //Ejercicio 11
+        //11-Selecciona todos los elementos con la clase .foto y ocúltalos.
+        $('.foto').hide();
+        //Ejercicio 12
+        
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+switch($metodo){
+  case "GET":
+    manejarGET($_conexion);
+    break;
+  case "POST"
+    manejarPOST($_conexion,$entrada);
+    break
+} -->

@@ -1,0 +1,82 @@
+/* Reseteo estilos */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+body {
+  text-align: center;
+}
+
+.container {
+  /* float:  left; */
+  border: 1px solid black;
+  width: 0 auto;
+  margin: 80%;
+}
+.container__layout {
+  /* float: left; */
+  display: grid;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: row wrap;
+  justify-content: space-around;
+  width: auto;
+  height: 700px;
+  align-items: center;
+  border: 1px solid black; */
+}
+.layout__box {
+  /* float: left; */
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 10px;
+  /* flex-grow: 1;
+  min-width: 20%; */
+}
+.clearfixotro {
+  float: none;
+  clear: both;
+}
+.layout__box--red {
+  background-color: red;
+  color: white;
+  /* flex-grow: 2; */
+  /* order: 2; */
+  flex-basis: calc((70% / 3)-20px);
+}
+.layout__box--yellow {
+  background-color: yellow;
+  color: white;
+  flex-grow: 1;
+  /* order: 4; */
+}
+.layout__box--green {
+  background-color: green;
+  color: white;
+  /* flex-grow: 2; */
+  order: 1;
+}
+.layout__box--oranje {
+  background-color: orange;
+  color: white;
+  /* flex-grow: 5; */
+  align-self: flex-end;
+  /* order: 3; */
+  flex-basis: calc();
+}
+.layout__box--pink {
+  background-color: pink;
+  color: white;
+  /* flex-grow: 10; */
+}
+.layout__box--blue {
+  background-color: blue;
+  color: white;
+  /* flex-grow: 1; */
+  align-self: flex-start;
+  flex-basis: calc(100% / 2) + 10px;
+}
